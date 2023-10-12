@@ -245,6 +245,7 @@ a {
 .hebergements-cards .card-title {
   margin-top: 4px;
   margin-bottom: 0;
+  /* min-width: 167px; */
 }
 
 .hebergements-cards .card-subtitle {
