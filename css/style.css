@@ -314,7 +314,6 @@ a {
 /****** Activités ***********/
 /****************************/
 .activites {
-  background: yellow;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -322,17 +321,17 @@ a {
 }
 
 .activites-cards {
-  background: cyan;
   display: flex;
   gap: 30px;
-  box-sizing: border-box;
+}
+.activites-cards a {
+  flex: 1;
 }
 
 .activites-cards .card {
   display: flex;
   flex-direction: column;
-  /* box-sizing: border-box; */
-  /* flex: 20%; */
+  align-items: stretch;
 }
 
 .activites-cards .card img {
