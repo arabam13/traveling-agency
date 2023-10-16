@@ -100,6 +100,7 @@ a {
 
 .header-nav .nav-list .nav-item {
   padding: 15px 0 0 0;
+  border-top: 1px solid transparent;
 }
 
 .header-nav .nav-list .nav-item:hover {
@@ -133,6 +134,7 @@ a {
 }
 .search-bar .vector {
   background: var(--main-bg-color);
+  color: #090e16;
   padding: 24px 17px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -189,6 +191,7 @@ a {
   border-radius: 25px;
   border: 2px solid var(--main-bg-color);
   font-weight: bold;
+  cursor: pointer;
 }
 .option:hover {
   background-color: #cce8fc;
@@ -267,15 +270,14 @@ a {
 .hebergements-cards .card-title {
   margin-top: 4px;
   margin-bottom: 0;
-  /* min-width: 167px; */
 }
 
 .hebergements-cards .card-subtitle {
   margin: 8px 0;
+  font-size: 14px;
 }
-.hebergements .hebergements-subtitle p {
+.hebergements .hebergements-subtitle h3 {
   margin: 0;
-  font-weight: 600;
   font-size: 18px;
 }
 /*******************************/
@@ -359,12 +361,12 @@ a {
 .activites-cards .card img {
   width: 100%;
   height: 380px;
-  max-height: 380px;
   border-radius: 20px 20px 0px 0px;
 }
 .activites-cards .card .card-title {
   padding: 20px 19px;
   margin: 0;
+  height: 19px;
 }
 
 /************************/
@@ -392,6 +394,7 @@ a {
   gap: 15px;
   margin: 0;
   padding-left: 0;
+  font-size: 14px;
 }
 
 /* Le code ci-dessous correspond à la version 
@@ -443,6 +446,14 @@ ve uniquement */
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+  /****** Activités ***********/
+  .activites-cards .card img {
+    height: 200px;
+  }
+  .activites-cards .card .card-title {
+    height: 40px;
+    font-size: 14px;
   }
   /****** footer ***********/
   .footer {
@@ -507,6 +518,7 @@ ve uniquement */
     border-radius: 25%;
     position: relative;
     right: 6px;
+    box-shadow: 0 4px 8px gray;
   }
   /****** Overview / Filter bar ***********/
   .options {
@@ -527,10 +539,11 @@ ve uniquement */
   }
   .hebergements-and-populaires .hebergements {
     background-color: white;
+    padding: 20px;
   }
   /****** Hebergements ***********/
   .hebergements {
-    gap: 20px;
+    gap: 15px;
   }
   .hebergements-cards a {
     flex: 100%;
@@ -541,8 +554,11 @@ ve uniquement */
     gap: 15px;
   }
   /****** populaires ***********/
+  .hebergements-and-populaires .populaires {
+    padding: 30px 20px;
+  }
   .populaires {
-    gap: 30px 20px;
+    gap: 15px;
   }
   .populaires-cards a {
     flex: 100%;
@@ -555,6 +571,13 @@ ve uniquement */
   /****** activites ***********/
   .activites-cards {
     flex-direction: column;
+    gap: 15px;
+  }
+  .activites-cards .card img {
+    height: 124px;
+  }
+  .activites-cards .card .card-title {
+    height: 19px;
   }
   /****** Footer ***********/
   .footer {
